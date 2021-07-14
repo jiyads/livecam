@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+        <script type="text/javascript" src="{{ url_for('static',filename='script/script.js') }}"></script>
+        </script>
+        </head>
+    <body>
+        <h1>
+HTML forms 
+        </h1>
+        <form action="/submit" method="POST">
+        <label for="science">Science</label><br>
+        <input type="text" id="science" name="science" value="0"><br>
+        <label for="maths">Maths</label><br>
+        <input type="text" id="" name="maths" value="0"><br><br>
+        <label for="C">C</label><br>
+        <input type="text" id="C" name="C" value="0"><br><br>
+        <label for="datascience">Data Science</label><br>
+        <input type="text" id="datascience" name="datascience" value="0"><br><br>
+        <input type="submit" value="Submit">
+        </form>
+
+        <p>if you click on the submmit button,the form data is sent to the page named /submit </p>
+</body>
+</html>
